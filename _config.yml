@@ -4,8 +4,8 @@ description: 'Programming Goody'
 url: 'http://programminggoody.com/'
 baseurl: '/'
 port: 4001
-#google_analytics: 'UA-XXXXXX-X'
-#disqus_shortname: 'your-disqus-name'
+google_analytics: 'UA-3959019-1'
+disqus_shortname: 'programminggoody'
 
 author:
   name: 'David Good'
