@@ -1,0 +1,39 @@
+# Site settings
+title: David Good
+description: 'Programming Goody'
+url: 'http://programminggoody.com/'
+baseurl: '/'
+port: 4001
+#google_analytics: 'UA-XXXXXX-X'
+#disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'David Good'
+  email: dgood@programminggoody.com
+  twitter_username: davidgood
+  github_username:  davidgood
+  linkedin_username:  programminggoody
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate', jekyll-admin]
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
