@@ -1,38 +1,37 @@
-# Site settings
-title: David Good
-description: 'Programming Goody'
-url: 'http://programminggoody.com/'
-baseurl: '/'
-port: 4001
-google_analytics: 'UA-3959019-1'
-disqus_shortname: 'programminggoody'
-
+title: Programminggoody
+description: "David Good"
 author:
-  name: 'David Good'
-  email: dgood@programminggoody.com
+  name: "David Good"
+  email: "dgood@programminggoody.com"
+  url: "https://programminggoody.com"
   github_username:  davidgood
-  linkedin_username:  programminggoody
+  linkedin_username: programminggoody
+
+baseurl: /
+
+source: .
+destination: ./_site
+permalink: /:year/:title
+paginate: 3
+paginate_path: /page/:num/
 
 defaults:
   -
     scope:
-      path: ''
-      type: 'posts'
+      path: ""
+      type: "posts"
     values:
-        layout: 'post'
+      layout: "post"
 
-# Build settings
-destination: _site
-paginate: 10
-permalink: /:year/:title/
-markdown: kramdown
-highlighter: rouge
+future: true
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
 
-kramdown:
-  # use Github Flavored Markdown
-  input: GFM
-  # do not replace newlines by <br>s
-  hard_wrap: false
+# Custom variables
+owner : "David Good"
+year : "2019"
 
-plugins: ['jekyll-paginate', jekyll-admin]
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+google_analytics: 'UA-3959019-1'
+
