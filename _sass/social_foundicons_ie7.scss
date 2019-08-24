@@ -1,0 +1,39 @@
+@import "settings";
+
+/* general icons for IE7 */
+[class*="#{$classPrefix}"] {
+  font-family: $fontName;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@include ie-class(thumb-up,"\f000");
+@include ie-class(thumb-down,"\f001");
+@include ie-class(rss,"\f002");
+@include ie-class(facebook,"\f003");
+@include ie-class(twitter,"\f004");
+@include ie-class(pinterest,"\f005");
+@include ie-class(github,"\f006");
+@include ie-class(path,"\f007");
+@include ie-class(linkedin,"\f008");
+@include ie-class(dribbble,"\f009");
+@include ie-class(stumble-upon,"\f00a");
+@include ie-class(behance,"\f00b");
+@include ie-class(reddit,"\f00c");
+@include ie-class(google-plus,"\f00d");
+@include ie-class(youtube,"\f00e");
+@include ie-class(vimeo,"\f00f");
+@include ie-class(flickr,"\f010");
+@include ie-class(slideshare,"\f011");
+@include ie-class(picassa,"\f012");
+@include ie-class(skype,"\f013");
+@include ie-class(steam,"\f014");
+@include ie-class(instagram,"\f015");
+@include ie-class(foursquare,"\f016");
+@include ie-class(delicious,"\f017");
+@include ie-class(chat,"\f018");
+@include ie-class(torso,"\f019");
+@include ie-class(tumblr,"\f01a");
+@include ie-class(video-chat,"\f01b");
+@include ie-class(digg,"\f01c");
+@include ie-class(wordpress,"\f01d");
