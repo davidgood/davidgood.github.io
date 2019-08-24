@@ -1,0 +1,54 @@
+@import "settings";
+
+/* font-face */
+@include face;
+
+/* global foundicon styles */
+[class*="#{$classPrefix}"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+[class*="#{$classPrefix}"]:before {
+  font-family: $fontName;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+}
+
+/* icons */
+@include i-class(thumb-up,"\f000");
+@include i-class(thumb-down,"\f001");
+@include i-class(rss,"\f002");
+@include i-class(facebook,"\f003");
+@include i-class(twitter,"\f004");
+@include i-class(pinterest,"\f005");
+@include i-class(github,"\f006");
+@include i-class(path,"\f007");
+@include i-class(linkedin,"\f008");
+@include i-class(dribbble,"\f009");
+@include i-class(stumble-upon,"\f00a");
+@include i-class(behance,"\f00b");
+@include i-class(reddit,"\f00c");
+@include i-class(google-plus,"\f00d");
+@include i-class(youtube,"\f00e");
+@include i-class(vimeo,"\f00f");
+@include i-class(flickr,"\f010");
+@include i-class(slideshare,"\f011");
+@include i-class(picassa,"\f012");
+@include i-class(skype,"\f013");
+@include i-class(steam,"\f014");
+@include i-class(instagram,"\f015");
+@include i-class(foursquare,"\f016");
+@include i-class(delicious,"\f017");
+@include i-class(chat,"\f018");
+@include i-class(torso,"\f019");
+@include i-class(tumblr,"\f01a");
+@include i-class(video-chat,"\f01b");
+@include i-class(digg,"\f01c");
+@include i-class(wordpress,"\f01d");
